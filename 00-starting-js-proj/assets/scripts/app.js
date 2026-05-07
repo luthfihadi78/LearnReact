@@ -37,6 +37,24 @@ const newHobbies = ["Catur"];
 const mergedHobbies = [...hobbies, ...newHobbies];
 console.log(mergedHobbies);
 
+const password = prompt("Your password");
+
+if(password == "Hello"){
+    console.log("Hello works");
+} else if (password == "hello"){
+    console.log("Hello Worksss")
+} else {
+    console.log("Not access")
+}
+
+
+const crypto = ["BTC","ETH","BNB"];
+
+for(const alt of crypto){
+    console.log(alt);
+}
+
+
 
 
 console.log(hobbies);
@@ -51,4 +69,4 @@ const user1 = new User("Budi", 34);
 console.log(user1);
 
 console.log(user);
-console.log(greetUser("Qkuk"))
+console.log(greetUser("Qkuk")) 
