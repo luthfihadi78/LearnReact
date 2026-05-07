@@ -32,8 +32,13 @@ class User{
 }
 
 const hobbies = ["Gaming","Reading", "Dancing"];
+const newHobbies = ["Catur"];
 
-hobbies.push("Working")
+const mergedHobbies = [...hobbies, ...newHobbies];
+console.log(mergedHobbies);
+
+
+
 console.log(hobbies);
 
 const index = hobbies.findIndex((item) => item === "Sports");
