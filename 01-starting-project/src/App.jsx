@@ -1,8 +1,9 @@
 
 import imageReact from './assets/components.png'
 import { CORE_CONCEPTS } from './data';
-import Header from './components/Header';
+import Header from './components/Header/Header.jsx';
 import CoreConcepts from './components/CoreConcept';
+import TabButton from './components/TabButton.jsx';
 
 function App() {
   return (
@@ -20,11 +21,19 @@ function App() {
               <CoreConcepts {...CORE_CONCEPTS[1]}/>  
               <CoreConcepts {...CORE_CONCEPTS[2]}/>  
               <CoreConcepts {...CORE_CONCEPTS[3]}/>  
-              
-
 
           </ul>
         </section>
+        <section id="examples">
+          <h2>Examples</h2>
+          <menu>
+          <TabButton>Components</TabButton>
+          <TabButton>JSX</TabButton>
+          <TabButton>Props</TabButton>
+          <TabButton>State</TabButton>
+          </menu>
+        </section>
+
         <h2>Time to get started!</h2>
       </main>
     </div>
